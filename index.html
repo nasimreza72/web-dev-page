@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Dev-Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&   display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            margin: 0%;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        li{
+            list-style-type: none;
+            display: inline-block;
+            padding-left: 40px;
+            padding-top:8px;
+        }
+
+        a{
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+    
+        }
+        
+
+        header{
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.349) , rgba(148, 145, 145, 0.596)), url(https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80););
+            background-color: red;
+            position: fixed;
+            height: 250px;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+        
+            } 
+
+        nav{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            bottom: 0%;
+        }
+
+        header>img{
+            width: 120px;
+            position: relative;
+            left: 50%;
+            top: 20%;
+            opacity: 100%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        header>h1{
+            color: rgba(255, 255, 255, 0.884);
+            text-shadow: 2px 2px black;
+            font-size: 2em;
+            text-align: center;
+        }
+
+     
+
+        section{
+            width: 80%;
+            height: 85vh;
+            background-color: rgb(204, 203, 203);
+            padding-top: 280px;
+            margin: auto;
+            box-sizing: border-box;
+            
+        }
+
+         .container1{
+           position: relative;
+        }
+
+        .w1{
+            width: 50%;
+            
+        
+        }
+
+        .w2{
+            width:50%;
+            position: absolute;
+            top: 0%;
+            right: 0%;
+           
+        }
+
+        .w11{
+            width:85%;
+            border: 1px solid rgb(162, 141, 211);
+            margin: auto;
+            padding: 2%;
+        }
+
+        .w12{
+            width:85%;
+            border: 1px solid rgb(162, 141, 211);
+            margin: auto;
+            position: relative;
+            top: 12.2vh;
+            padding: 2%;
+
+        }
+
+        .w21{
+            width:85%;
+            border: 1px solid rgb(214, 97, 18);
+            margin: auto;
+            position: relative;
+            top: 12.2vh;
+            padding: 2%;
+        }
+
+        .w22{
+            width:85%;
+            border: 1px solid rgb(214, 97, 18);
+            margin: auto;
+            position: relative;
+            top: 24.4vh;
+            padding: 2%;
+        }
+
+
+
+
+        footer{
+            width:100%;
+            height: 50px;
+            background-color: rgb(31, 29, 29);
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            text-align: center;
+            color: white;
+    
+            
+        }
+
+     
+        ul .right2{
+            position: absolute;
+            right: 40px;
+            top: 8px;
+        }
+
+        ul .right1{
+            position: absolute;
+            right: 150px;
+            top: 8px;
+        }
+
+        /******** vertical line *********/
+
+        .vl {
+            border-left: 2px solid rgb(143, 143, 143);
+            height: 48vh;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: 0;
+        }
+
+        /***************** dot *******************/
+
+        .d1{
+            width: 20px;
+            height: 20px;
+            border: 1px solid blue;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            left: -.3%;
+            top: 25%;
+            transform: translate(-50%, -50%);
+        }
+
+        .d2{
+            width: 20px;
+            height: 20px;
+            border: 1px solid blue;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            left: -.3%;
+            top: 125%;
+            transform: translate(-50%, -50%);
+        }
+        .d3{
+            width: 20px;
+            height: 20px;
+            border: 1px solid orange;
+            background-color: orange;
+            border-radius: 50%;
+            position: absolute;
+            left: -.3%;
+            top: 75%;
+            transform: translate(-50%, -50%);
+
+        }
+        .d4{
+            width: 20px;
+            height: 20px;
+            border: 1px solid orange;
+            background-color: orange;
+            border-radius: 50%;
+            position: absolute;
+            left: -.3%;
+            top: 175%;
+            transform: translate(-50%, -50%);
+        }
+
+       /***************** dot *******************/
+       
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="./developer.jpeg" alt="developer's image">
+        <h1>I'm a freelance Web Developer</h1>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="right1" href="#">Sign In</a></li>
+                <li><a class="right2" href="#">Sign Up</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+<section>
+    <div class="container1">
+
+        <div class="w1">
+
+            <div class="w11">
+                <h1>Loream-1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eaque rem nulla ab accusamus temporibus id nam laboriosam necessitatibus</p>
+            </div>
+
+            <div class="w12">
+                <h1>Loream-3</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eaque rem nulla ab accusamus temporibus id nam laboriosam necessitatibus, aperiam qui.</p>
+            </div>
+
+        </div>
+
+        
+        <div class="vl"></div>
+
+        <div class="w2">
+
+            <div class="w21">
+                <h1>Loream-2</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eaque rem nulla ab accusamus temporibus id nam laboriosam necessitatibus, aperiam qui.</p>
+            </div>
+
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d3"></div>
+
+            <div class="w22">
+                <h1>Loream-4</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eaque rem nulla ab accusamus temporibus id nam laboriosam necessitatibus, aperiam qui.</p>
+            </div>
+
+            <div class="d4"></div>
+
+        </div>
+
+    </div>
+
+
+
+
+        
+       
+</section>
+
+
+    <footer>
+        <h2>This is the footer.</h2>
+    </footer>
+
+
+
+
+        
+
+    
+</body>
+</html>
