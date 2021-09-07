@@ -14,31 +14,34 @@
             margin: 0%;
             box-sizing: border-box;
             font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            scroll-behavior: smooth;
         }
 
         li{
             list-style-type: none;
             display: inline-block;
-            padding-left: 40px;
-            padding-top:8px;
+            padding-left: 2vw;
+            padding-top:1.5vh;
         }
 
         a{
             color: white;
-            font-size: 1.5rem;
+            font-size: 100%;
             text-decoration: none;
     
         }
         
 
         header{
-            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.349) , rgba(148, 145, 145, 0.596)), url(https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80););
+            background-image: linear-gradient(to right, rgba(97, 95, 95, 0.562) , rgba(121, 118, 118, 0.918)), url(https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80););
             background-color: red;
             position: fixed;
             height: 250px;
             width: 100%;
             background-position: center;
             background-size: cover;
+            z-index: 1;
         
             } 
 
@@ -47,23 +50,48 @@
             height: 50px;
             background-color: rgb(0, 0, 0);
             position: absolute;
-            bottom: 0%;
+            top:200px;
         }
 
+        .buttons{
+            display: inline;
+            position: absolute;
+            right: 3vw;
+            top: 1.5vh;        
+        } 
+
+        button{
+            background-color:black;
+            color: white;
+            margin:0 .5vw;
+            border: none;
+            font-size: 100%;
+}
+
         header>img{
-            width: 120px;
+            width: 200px;
+            height:105px;
             position: relative;
             left: 50%;
             top: 20%;
-            opacity: 100%;
-            border-radius: 50%;
+            opacity: 95%;
             transform: translate(-50%, -50%);
             text-align: center;
         }
 
+        header>img:hover{
+            width: 120px;
+            height: 100px;
+            transition: 5s;
+            position: relative;
+            top: 500px;
+            scroll-behavior: smooth;
+        }
+
+    
         header>h1{
-            color: rgba(255, 255, 255, 0.884);
-            text-shadow: 2px 2px black;
+            color: rgba(134, 220, 235, 0.959);
+            text-shadow: 3px 3px rgba(240, 92, 7, 0.856);
             font-size: 2em;
             text-align: center;
         }
@@ -72,14 +100,16 @@
 
         section{
             width: 80%;
-            height: 85vh;
-            background-color: rgb(204, 203, 203);
+            height: 750px;
+            background-color: rgb(238, 238, 238);
+            
             padding-top: 280px;
             margin: auto;
             box-sizing: border-box;
             
         }
 
+   
          .container1{
            position: relative;
         }
@@ -99,81 +129,68 @@
         }
 
         .w11{
-            width:85%;
+            width:80%;
+            height: 13vh;
             border: 1px solid rgb(162, 141, 211);
             margin: auto;
-            padding: 2%;
+            padding: 3%;
+            overflow: auto;
+            border-radius: 10px;
         }
 
         .w12{
-            width:85%;
+            width:80%;
+            height: 13vh;
             border: 1px solid rgb(162, 141, 211);
             margin: auto;
             position: relative;
             top: 12.2vh;
-            padding: 2%;
+            padding: 3%;
+            overflow: auto;
+            border-radius: 10px;
 
         }
 
         .w21{
-            width:85%;
+            width:80%;
+            height: 13vh;
             border: 1px solid rgb(214, 97, 18);
             margin: auto;
             position: relative;
             top: 12.2vh;
-            padding: 2%;
+            padding: 3%;
+            overflow: auto;
+            border-radius: 10px;
         }
 
         .w22{
-            width:85%;
+            width:80%;
+            height: 13vh;
             border: 1px solid rgb(214, 97, 18);
             margin: auto;
             position: relative;
             top: 24.4vh;
-            padding: 2%;
+            padding: 3%;
+            overflow: auto;
+            border-radius: 10px;
         }
 
 
 
-
-        footer{
-            width:100%;
-            height: 50px;
-            background-color: rgb(31, 29, 29);
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            text-align: center;
-            color: white;
-    
-            
-        }
 
      
-        ul .right2{
-            position: absolute;
-            right: 40px;
-            top: 8px;
-        }
-
-        ul .right1{
-            position: absolute;
-            right: 150px;
-            top: 8px;
-        }
-
         /******** vertical line *********/
 
         .vl {
             border-left: 2px solid rgb(143, 143, 143);
-            height: 48vh;
+            height: 52vh;
             position: absolute;
             left: 50%;
             margin-left: -3px;
             top: 0;
         }
 
-        /***************** dot *******************/
+        /************* dot **********/
 
         .d1{
             width: 20px;
@@ -195,7 +212,7 @@
             border-radius: 50%;
             position: absolute;
             left: -.3%;
-            top: 125%;
+            top: 123%;
             transform: translate(-50%, -50%);
         }
         .d3{
@@ -206,7 +223,7 @@
             border-radius: 50%;
             position: absolute;
             left: -.3%;
-            top: 75%;
+            top: 73%;
             transform: translate(-50%, -50%);
 
         }
@@ -218,27 +235,136 @@
             border-radius: 50%;
             position: absolute;
             left: -.3%;
-            top: 175%;
+            top: 170%;
             transform: translate(-50%, -50%);
         }
 
-       /***************** dot *******************/
+       /********dot ends********/
+
+
+       /* *******Container 2 ******/
+
+       .container2{
+            width: 80%;
+            height: 300px;
+            background-color: rgb(238, 238, 238);
+            margin-top: 3vh;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 7vh;
+            box-sizing: border-box;
+            position: relative;
+            
+        }
+
+        .s1{
+            width: 48%;
+            height: 200px;
+            background-color: rgb(241, 154, 91);
+            padding: 3vw;
+            overflow: auto;
+            transition: width 2s, height 2.5s;
+            position: relative;
+
+        }
+        .s1:hover{
+            width: 400px;
+            height: 220px;
+            z-index: 2;
+        }
+
+
+        .s2{
+            width: 48%;
+            height: 200px;
+            background-color: rgb(146, 230, 255);
+            position: absolute;
+            top: 50px;
+            left: 24%;
+            padding: 3vw;
+            overflow: auto;
+            transition: width 2s, height 2.5s;
+        }
+
+        .s2:hover{
+            width: 400px;
+            height: 220px;
+            z-index: 1;
+        }
+
+        .s3{
+            width: 48%;
+            height: 200px;
+            background-color: rgb(231, 43, 248);
+            position: absolute;
+            top: 100px;
+            right: 0;
+            padding: 3vw;
+            overflow: auto;
+            transition: width 2s, height 2.5s;
+        }
+
+        .s3:hover{
+            width: 400px;
+            height: 220px;
+
+        }
+
+
+
+            /******** footer **********/
+
+       footer{
+            width:100%;
+            height: 50px;
+            background-color: rgb(31, 29, 29);
+            /* position: fixed; */
+            left: 0;
+            bottom: 0;
+            text-align: center;
+            color: white;
+            position: relative;
+    
+            
+        }
+
+        .home{
+            position: absolute;
+            bottom: -6.5vh;
+            right: -4vh;
+        }
+
+          /* *****hover ******/
+
+          .home:hover{
+                width: 275px;
+                transition: width 2s;
+          }
+          a:hover{
+              color: red;
+              transition:1s;
+
+          }
+
+     
        
     </style>
 </head>
 <body>
 
     <header>
-        <img src="./developer.jpeg" alt="developer's image">
+        <img src="./pngegg5.png" alt="developer's image">
         <h1>I'm a freelance Web Developer</h1>
         <nav>
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a class="right1" href="#">Sign In</a></li>
-                <li><a class="right2" href="#">Sign Up</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a><li>   
             </ul>
+            <span class="buttons">
+                <button>Sign In</button>
+                <button>Sign Up</button>
+            </span>
 
         </nav>
     </header>
@@ -250,7 +376,7 @@
 
             <div class="w11">
                 <h1>Loream-1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eaque rem nulla ab accusamus temporibus id nam laboriosam necessitatibus</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eaque rem nulla ab accusamus temporibus id nam laboriosam necessitatibus, aperiam qui.</p>
             </div>
 
             <div class="w12">
@@ -295,9 +421,29 @@
        
 </section>
 
+<div class="container2">
 
-    <footer>
-        <h2>This is the footer.</h2>
+    <div class="s1">
+        <h1>Loream-1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequatur, quam inventore, ea sed facilis assumenda porro deserunt illum doloremque quae vero accusamus animi, et hic suscipit repellat architecto. Beatae.</p>
+    </div>
+    <div class="s2">
+        <h1>Loream-2</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quod quas ratione numquam nam excepturi reprehenderit! Sequi molestiae minima enim? Omnis accusantium minima sunt voluptatum ex at, illo dolores eaque.</p>
+    </div>
+    <div class="s3">
+        <h1>Loream-3</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis eos sunt quaerat quis amet illum recusandae iure, ex ratione veritatis consequuntur in voluptate nulla sequi animi pariatur exercitationem sint placeat.</p>
+    </div>
+
+</div>
+
+
+    <footer> 
+         <a href="#"><img src="./pngegg1.png" alt="" width="70vw"></a> 
+
+         <p style="color: rgb(255, 255, 255); position: absolute; top: 2vh; right: 44vw; font-weight:bold ;">2021</p>
+         <a href="#"><img class="home" src="./pngegg2.png" alt="" width="195vw"></a>
     </footer>
 
 
